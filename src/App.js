@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import "./components/Button"
+import{ Button } from './components/Button';
+import { useState } from 'react';
 
 function App() {
+  const [theme,setThem] = useState("dark")
+  const [color,setcolor] = useState("white")
+  const [border,setBorder] = useState("solid")
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+   <Button theme={theme} color={color}>Primary Button</Button>
+   <Button border={border}>Default</Button>
+   <Button border={"dashed"} >Dashed Button</Button>
+   <Button theme={"text"}>Text Button</Button>
+   <Button color={"link"}>Link Button</Button>
+      
+       
     </div>
   );
 }
