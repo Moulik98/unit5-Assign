@@ -1,0 +1,102 @@
+.timer{
+    background-color: #E0F7FA;
+   width: 25%;
+   padding: 10px;
+   margin: auto;
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  justify-content: center;
+  height: 300px;
+  
+}
+.restart,.stop{
+    margin-top: 50px;
+    background-color:#E1BEE7;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight:100;
+    border: none;
+    padding: 2px;
+    height: 50px;
+    padding: 5px;
+    width: 90px;
+}
+.restart{
+    margin-right: 4%;
+}
+.stop{
+    margin-left: 4%;
+}
+
+@media screen and (max-width: 992px) {
+   .timer{
+       background-color: #E0F7FA;
+      width: 75%;
+      padding: 10px;
+      margin: auto;
+     margin-top: 50px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 20px;
+     justify-content: center;
+     height: 500px;
+   }
+   .restart,.stop{
+       margin-top: 50px;
+       background-color:#E1BEE7;
+       color: white;
+       font-size: 40px;
+       border-radius: 10px;
+       font-weight:100;
+       border: none;
+       padding: 2px;
+       height: 85px;
+       padding: 5px;
+       width:190px ;
+   }
+   .restart{
+       margin-right: 4%;
+   }
+   .stop{
+       margin-left: 4%;
+   }
+   h1{
+       font-size:60px
+       }
+ }
+ 
+ /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px ) {
+   .timer{
+       background-color: #E0F7FA;
+      width: 85%;
+      padding: 10px;
+      margin: auto;
+     margin-top: 50px;
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 20px;
+     
+     display: flex;
+     height: 450px;
+     justify-content: center;
+   }
+   .restart,.stop{
+       
+       margin-top: 50px;
+       background-color:#E1BEE7;
+       color: white;
+       font-size: 21px;
+       border-radius: 10px;
+       font-weight:120;
+       padding: 5px;
+       border: none;
+       margin-left: 2%;
+       margin-right: 2%;  
+       height: 55px;
+       width:75px ;
+       
+   }
+   .h1{
+   font-size:55px
+   }
